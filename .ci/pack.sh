@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # Determine the full revision name.
-GITDATE="`git show -s --date=short --format='%ad' | sed 's/-//g'`"
+GITDATE="`git show -s --date=short --format='%cd' | sed 's/-//g'`"
 GITREV="`git show -s --format='%h'`"
 REV_NAME="azahar-$OS-$TARGET-$GITDATE-$GITREV"
 
